@@ -1,7 +1,7 @@
-Jasmine - Test.Adapter for Ember.js test harness
+jasmine-ember-testing
 =====================
 
-Implements ember integration test helpers for the Jasmine test suite.
+Enables use of ember integration test helpers for the Jasmine test suite by adding new Ember.js Test.Adapter for the Jasmine testing framework
 
 ### Nuances:
 
