@@ -7,7 +7,7 @@ Uses principles of testing Jasmine asynchronous specs as described [here](https:
 
 ### Using
 
-In your equivalent Jasmine spec_helper.js, you need to set the Ember test adapter to the Jasmine adapter: 
+In your equivalent Jasmine spec_helper.js, you need to set the Ember test adapter to the Jasmine adapter:
 
 ```
 Ember.Test.adapter = Ember.Test.JasmineAdapter.create();
@@ -15,9 +15,9 @@ Ember.Test.adapter = Ember.Test.JasmineAdapter.create();
 
 In a Jasmine test runner debug console, ```Ember.test.adapter``` should be an instance of the JasmineAdapter, not the default QUnit Test Adapter.
 
-### Nuances:
+### TODOs:
 
-- In ember.js (Need to enable all relevant features for the helper jasmine tests):
+- In ember.js (Need to enable all relevant features for the helper jasmine tests)  This is currently managed in Ember core through features.json:
 
 ```
 Ember.FEATURES["reduceComputed-non-array-dependencies"] = true;
@@ -26,8 +26,6 @@ Ember.FEATURES["ember-testing-wait-hooks"] = true;
 Ember.FEATURES["ember-testing-routing-helpers"] = true;
 ```
 
-- Added underscore.js to implement equivalent toBeDeepEqual matcher that is in QUnit
-
-### TODOs:
+- Added underscore.js to implement equivalent toBeDeepEqual matcher that is in QUnit.  Really should just implement a stand alone deepEqual function
 
 - Implement ```expectAssertion```, used in qunit_configuration within ember.js testing framework.
