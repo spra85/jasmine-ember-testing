@@ -29,3 +29,5 @@ Ember.FEATURES["ember-testing-routing-helpers"] = true;
 - Added underscore.js to implement equivalent toBeDeepEqual matcher that is in QUnit.  Really should just implement a stand alone deepEqual function
 
 - Implement ```expectAssertion```, used in qunit_configuration within ember.js testing framework.
+
+- Need to point at latest Ember / Ember.Data libraries
