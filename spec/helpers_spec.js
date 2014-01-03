@@ -67,14 +67,15 @@ describe("ember-testing Helpers", function() {
     },
 
     isAsyncComplete: function() {
+      console.log("isAsyncComplete", AsyncTest.complete);
       return AsyncTest.complete;
     }
   };
 
-  xit("implements jasmine async stuff", function() {
+  it("implements jasmine async stuff", function() {
     console.log("start test feature");
     setTimeout(AsyncTest.testAsync, 1000);
-    waitsFor(AsyncTest.isAsyncComplete, "test async to have run", 10000);
+    waitsFor(AsyncTest.isAsyncComplete, "test async to have run", 5000);
 
     runs(function(){
       console.log("runs block post waitFor asyncComplete");
