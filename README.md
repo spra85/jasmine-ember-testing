@@ -39,6 +39,14 @@ Currently supports Jasmine 1.3
 
 - Added underscore.js to implement equivalent toBeDeepEqual matcher that is in QUnit.  Really should just implement a stand alone deepEqual function
 
+- Add Travis CI build
+
+- Add support for Jasmine 2.0
+
+### Running Tests
+
+Need to add a headless test suite.  For the time being just open the spec/index.html file in a browser.
+
 
 ## Contributing
 
