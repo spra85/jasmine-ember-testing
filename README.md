@@ -15,6 +15,22 @@ Ember.Test.adapter = Ember.Test.JasmineAdapter.create();
 
 In a Jasmine test runner debug console, ```Ember.test.adapter``` should be an instance of the JasmineAdapter, not the default QUnit Test Adapter.
 
+### Ember Versions
+
+Currently pointing at the latest Ember.js release channel (http://emberjs.com/builds/#/release) for tests and beta for Ember data:
+
+```
+// Ember
+http://builds.emberjs.com/release/ember.js
+
+// Ember Data
+http://builds.emberjs.com/beta/ember-data.js
+```
+
+### Jasmine Versions
+
+Currently supports Jasmine 1.3
+
 ### TODOs:
 
 - In ember.js (Need to enable all relevant features for the helper jasmine tests)  This is currently managed in Ember core through features.json:
