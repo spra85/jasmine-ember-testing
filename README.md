@@ -15,11 +15,14 @@ Ember.Test.adapter = Ember.Test.JasmineAdapter.create();
 
 In a Jasmine test runner debug console, ```Ember.test.adapter``` should be an instance of the JasmineAdapter, not the default QUnit Test Adapter.
 
-### Ember Versions
+### Ember & Handlebars Versions
 
 Currently pointing at the latest Ember.js release channel (http://emberjs.com/builds/#/release) for tests and beta for Ember data:
 
 ```
+// Handlebars
+http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.3.0.js
+
 // Ember
 http://builds.emberjs.com/release/ember.js
 
@@ -33,18 +36,9 @@ Currently supports Jasmine 1.3
 
 ### TODOs:
 
-- In ember.js (Need to enable all relevant features for the helper jasmine tests)  This is currently managed in Ember core through features.json:
-
-```
-Ember.FEATURES["reduceComputed-non-array-dependencies"] = true;
-Ember.FEATURES["ember-testing-lazy-routing"] = true;
-Ember.FEATURES["ember-testing-wait-hooks"] = true;
-Ember.FEATURES["ember-testing-routing-helpers"] = true;
-```
 
 - Added underscore.js to implement equivalent toBeDeepEqual matcher that is in QUnit.  Really should just implement a stand alone deepEqual function
 
-- Implement ```expectAssertion```, used in qunit_configuration within ember.js testing framework.
 
 ## Contributing
 
