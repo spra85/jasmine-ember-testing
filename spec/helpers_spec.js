@@ -491,7 +491,7 @@ describe("ember-testing pendingAjaxRequests", function() {
     expect(Ember.Test.pendingAjaxRequests).toEqual(0);
   });
 
-  xit("it should raise an assertion error if ajaxStop is called without pendingAjaxRequests", function() {
+  it("it should raise an assertion error if ajaxStop is called without pendingAjaxRequests", function() {
     Ember.Test.pendingAjaxRequests = 0;
 
     expectAssertion(function() {

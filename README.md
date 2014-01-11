@@ -30,4 +30,10 @@ Ember.FEATURES["ember-testing-routing-helpers"] = true;
 
 - Implement ```expectAssertion```, used in qunit_configuration within ember.js testing framework.
 
-- Need to point at latest Ember / Ember.Data libraries
+## Contributing
+
+1. Fork it ( https://github.com/spra85/jasmine-ember-testing/fork )
+2. Create your feature branch (`git checkout -b new-feature`)
+3. Commit your changes (`git commit -am 'Fixed X'`)
+4. Push to the branch (`git push origin new-feature`)
+5. Create new Pull Request
