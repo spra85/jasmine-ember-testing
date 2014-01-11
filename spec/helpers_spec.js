@@ -25,9 +25,7 @@ function assertHelpers(application, helperContainer, expected){
     var presentInHelperContainer = !!helperContainer[helper],
         presentInTestHelpers = !!application.testHelpers[helper];
 
-    //console.log("Expected '" + helper + "' to be present in the helper container (defaults to window).");
     expect(presentInHelperContainer).toEqual(expected);
-    //console.log("Expected '" + helper + "' to be present in App.testHelpers.");
     expect(presentInTestHelpers).toEqual(expected);
   }
 
@@ -54,33 +52,6 @@ describe("ember-testing Helpers", function() {
 
   afterEach(function() {
     cleanup();
-  });
-
-  var AsyncTest = {
-    counter: 0,
-    complete: false,
-
-    testAsync: function() {
-      AsyncTest.counter++;
-      AsyncTest.complete = true;
-      console.log("Async test method complete");
-    },
-
-    isAsyncComplete: function() {
-      console.log("isAsyncComplete", AsyncTest.complete);
-      return AsyncTest.complete;
-    }
-  };
-
-  it("implements jasmine async stuff", function() {
-    console.log("start test feature");
-    setTimeout(AsyncTest.testAsync, 1000);
-    waitsFor(AsyncTest.isAsyncComplete, "test async to have run", 5000);
-
-    runs(function(){
-      console.log("runs block post waitFor asyncComplete");
-      expect(AsyncTest.counter).toEqual(1);
-    });
   });
 
   it("Ember.Application#injectTestHelpers/#removeTestHelpers", function() {
